@@ -1,4 +1,5 @@
 function submitAnswers() {
+    // Gonna use these eventually
     var totalQuestions = 5;
     var score = 0;
 
@@ -20,10 +21,10 @@ function submitAnswers() {
     for (i=1; i<=totalQuestions; i++){
         if(eval("q" +i) == null || eval("q"+i) == "") { //using eval is how you would get the loop to recgonize that you want to loop through the variables you made above
             alert(i+ " hasn't been answered!");
-            return false; //this will keep the form from submitting 
+            return false; //this will keep the form from "submitting" because it's not like this is operating with a database or something
         }
     }
-    // Set the correct answers
+    // Set the correct answers by storing them the proper selections in an array.
     var answers = ["d","b","a","d","d"];
     // Check the answers
     for(i=1; i<=totalQuestions;i++) {
@@ -32,8 +33,8 @@ function submitAnswers() {
         }
     }
     // Display results
-    var results = document.getElementById("results");
-    results.innerHTML = "<h3> You scored <span>" +score+ "</span> out of <span>" +totalQuestions+ "</span>    :D</h3>"
+    var results = document.getElementsByClassName ("results"); //getElementsByClassName returns an array buy getElementsbyId returns a single element since only one element can have an id anyways. don't use id's.
+    results[0].innerHTML = "<h3> You scored <span>" +score+ "</span> out of <span>" +totalQuestions+ "</span>    :D</h3>"
     alert("You scored "+score+ " out of "+totalQuestions+"!");
 
     return false;

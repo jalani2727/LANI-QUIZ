@@ -9,7 +9,7 @@ h3{
     color:black;
 }
 
-#container{
+.container{
     width: 60%;
     border:5px solid gray;
     border-radius: 2%;
@@ -51,14 +51,14 @@ input[type="submit"] {
     cursor:pointer;
 }
 
-#results h3{
+.results h3{
     background:rgb(167, 32, 32);
     color:white;
     margin:10px 0;
     padding: 10px 15px;
 }
 
-#results span{
+.results span{
     color: rgb(255, 210, 210);
     font-weight:bold;
 }
