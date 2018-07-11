@@ -1,0 +1,64 @@
+body{
+    background: rgb(245, 241, 241);
+    color: rgb(167, 32, 32);
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 14px;
+  
+}
+h3{
+    color:black;
+}
+
+#container{
+    width: 60%;
+    border:5px solid gray;
+    border-radius: 2%;
+    /* background:rgb(165, 163, 163); */
+    margin:20px auto; /* auto in the second space will push the left and right margins to the middle */
+    overflow:auto;
+    padding:25px;
+}
+
+header{
+    text-align: center;
+    border-bottom: rgb(167, 32, 32) dashed 1px;
+}
+
+header h1{
+    margin:0;
+    padding:0;
+}
+
+header p{
+    padding:0;
+    margin-top: 5px;
+    color: black;
+}
+
+section{
+    min-height: 400px; /* "height" made the section internally scrollable by locking it's height */
+}
+
+footer{
+    text-align: center;
+}
+
+input[type="submit"] {
+    background:rgb(167, 32, 32);
+    border:0;
+    color:white;
+    padding:10px 15px;
+    cursor:pointer;
+}
+
+#results h3{
+    background:rgb(167, 32, 32);
+    color:white;
+    margin:10px 0;
+    padding: 10px 15px;
+}
+
+#results span{
+    color: rgb(182, 97, 97);
+    font-weight:bold;
+}
